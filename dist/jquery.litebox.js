@@ -12,19 +12,17 @@
 		callback = callback || showImage;
 		
 		this.on('click', function() {
-			if ($('.overlay').length < 1) {
-				var overlay = $('<div class="litebox overlay"></div>');
-				
-				overlay.on('click', function() {
-					overlay.remove();
-					$('body').css('overflow', 'auto');
-				});
-				
-				callback(this, overlay);
-				
-				$('body').css('overflow', 'hidden');
-				$('body').append(overlay);
-			}
+			var overlay = $('<div class="litebox overlay"></div>');
+			
+			overlay.on('click', function() {
+				overlay.remove();
+				$('body').css('overflow', 'auto');
+			});
+			
+			callback(this, overlay);
+			
+			$('body').css('overflow', 'hidden');
+			$('body').append(overlay);
 			
 			return false;
 		});
