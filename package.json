@@ -17,6 +17,9 @@
     "photo",
     "gallery"
   ],
+  "dependencies": {
+    "jquery": ">=1.4.1"
+  },
   "author": "Samuel Williams <samuel.williams@oriontransfer.co.nz> (http://www.codeotaku.com)",
   "license": "MIT",
   "bugs": {

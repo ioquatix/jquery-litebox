@@ -12,6 +12,9 @@
     "photo",
     "gallery"
   ],
+  "dependencies": {
+    "jquery": ">=1.4.1"
+  },
   "license": "MIT",
   "homepage": "https://github.com/ioquatix/jquery-litebox",
   "ignore": [
@@ -20,8 +23,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "jquery": "^3.2.1"
-  }
+  ]
 }
