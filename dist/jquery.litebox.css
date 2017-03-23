@@ -1,5 +1,5 @@
 
-.overlay {
+.litebox.overlay {
 	background: rgba(0, 0, 0, 0.96);
 	position: fixed;
 	top: 0;
@@ -16,7 +16,7 @@
 	padding: 1em;
 }
 
-.overlay img {
+.litebox.overlay img {
 	flex-shrink: 1;
 	max-width: 100%;
 	max-height: 100%;

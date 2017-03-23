@@ -1,6 +1,6 @@
 # jQuery.LiteBox
 
-A ridiculously light-weight lightbox/gallery plugin for jQuery. Convention over configuration.
+A ridiculously light-weight lightbox/gallery plugin for jQuery. Convention over configuration. Uses flexbox for completely responsive CSS. Check out the [example](example/index.html).
 
 Can be used in conjunction with [Utopia::Gallery](https://github.com/ioquatix/utopia-gallery).
 

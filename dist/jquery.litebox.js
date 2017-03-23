@@ -1,22 +1,28 @@
 
-(function ($) {
-	$.fn.litebox = function() {
+(function ($, undefined) {
+	function showImage(element, overlay) {
+		if (element.href) {
+			var image = new Image();
+			image.src = element.href;
+			overlay.append(image);
+		}
+	}
+	
+	$.fn.litebox = function(callback) {
+		callback = callback || showImage;
+		
 		this.on('click', function() {
 			if ($('.overlay').length < 1) {
-				var overlay = $('<div class="litebox-overlay"></div>');
+				var overlay = $('<div class="litebox overlay"></div>');
 				
 				overlay.on('click', function() {
-					$('.litebox-overlay').remove();
-					$("body").css("overflow", "auto");
+					overlay.remove();
+					$('body').css('overflow', 'auto');
 				});
 				
-				if (this.href) {
-					var image = new Image();
-					image.src = this.href;
-					overlay.append(image);
-				}
+				callback(this, overlay);
 				
-				$("body").css("overflow", "hidden");
+				$('body').css('overflow', 'hidden');
 				$('body').append(overlay);
 			}
 			
