@@ -14,7 +14,7 @@ And then add the following to your HTML:
 
 ```html
 <link rel="stylesheet" href="jquery.litebox.css" type="text/css" media="screen" />
-<script src="jquery.litebox.js"/></script>
+<script src="jquery.litebox.js"></script>
 ```
 
 ## Usage
