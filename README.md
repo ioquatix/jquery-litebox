@@ -8,7 +8,7 @@ Can be used in conjunction with [Utopia::Gallery](https://github.com/ioquatix/ut
 
 Add this line to your website's Gemfile:
 
-	bower install 'jquery-litebox'
+	yarn add 'jquery-litebox'
 
 And then add the following to your HTML:
 
